@@ -1,0 +1,17 @@
+{
+  "name": "rag-search",
+  "install": "bash .cursor/install.sh",
+  "terminals": [
+    {
+      "name": "api",
+      "command": ". .venv/bin/activate && uvicorn main:app --reload --port 8069",
+      "description": "FastAPI RAG Search API (http://localhost:8069, docs at /docs)"
+    }
+  ],
+  "ports": [
+    {
+      "name": "api",
+      "port": 8069
+    }
+  ]
+}
